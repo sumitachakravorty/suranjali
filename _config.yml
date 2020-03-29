@@ -37,7 +37,7 @@ defaults:
     values:
       image: true
 
-remote_theme: benbalter/retlab
+remote_theme: poole/lanyon
 
 sass:
   sass_dir: _sass
