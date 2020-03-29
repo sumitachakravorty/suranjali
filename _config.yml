@@ -11,7 +11,7 @@ highlighter:         pygments
 title:               Suranjali
 tagline:             'Where Indian classical music begins'
 description:         'Suranjali School of Music'
-url:                 'sumitachakravorty.github.io'
+url:                 'sumitachakravorty.github.io/suranjali'
 baseurl:             ''
 plugins:
   - jekyll-paginate
