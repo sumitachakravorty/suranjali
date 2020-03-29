@@ -28,3 +28,5 @@ defaults:
       path: "assets/img"
     values:
       image: true
+
+remote_theme: poole/lanyon
