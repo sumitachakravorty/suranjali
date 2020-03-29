@@ -2,4 +2,4 @@
 layout: page
 title: Gurus
 ---
-![sumita chakravorty]({{ site.baseurl }}/assets/img/bodasji/bodasji.jpg)
+![Sumita Chakravorty's Guru]({{ site.baseurl }}/assets/img/Bodasji/bodasji.jpg)
