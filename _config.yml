@@ -12,7 +12,7 @@ title:               Suranjali
 tagline:             'Where Indian classical music begins'
 description:         'Suranjali School of Music'
 url:                 https://sumitachakravorty.github.io/suranjali/
-baseurl:             ''
+baseurl:             'https://sumitachakravorty.github.io/suranjali'
 plugins:
   - jekyll-paginate
 paginate:            1
