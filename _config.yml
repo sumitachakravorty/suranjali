@@ -1,14 +1,17 @@
+markdown:            redcarpet
+highlighter:         pygments
+
 # Permalinks
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
-#relative_permalinks: true
+relative_permalinks: true
 
 # Setup
 title:               Suranjali
 tagline:             'Where Indian classical music begins'
 description:         'Suranjali School of Music'
-url:                 https://github.com/sumitachakravorty/suranjali
+url:                 https://sumitachakravorty.github.io/suranjali/
 baseurl:             ''
 plugins:
   - jekyll-paginate
@@ -23,10 +26,17 @@ author:
 # Custom vars
 version:             1.0.0
 
+github:
+  repo:              https://github.com/sumitachakravorty/suranjali
+
 defaults:
   - scope:
       path: "assets/img"
     values:
       image: true
 
-remote_theme: poole/lanyon
+theme:
+
+sass:
+  sass_dir: _sass
+  style: :compressed
