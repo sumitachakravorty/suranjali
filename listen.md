@@ -38,5 +38,5 @@ Darbari
 [![Darbari](https://img.youtube.com/vi/vt7FfzCHFC0/0.jpg)](https://www.youtube.com/watch?v=vt7FfzCHFC0 "Darbari")
 
 ## Bengali devotional songs 
-[![vivekananda](https://img.youtube.com/vi/J-OVHM6goa/0.jpg)](https://www.youtube.com/watch?v=J-OVHM6goa "vivekananda")
+[![Swami Vivekananda](https://img.youtube.com/vi/J-OVHM6goa4/0.jpg)](https://www.youtube.com/watch?v=J-OVHM6goa4 "Swami Vivekananda")
 
