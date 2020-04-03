@@ -27,9 +27,7 @@ Raag Nat Bhairav
 Raag Madhuvanti. Nippon Theatre, Seattle, WA
 [![Madhuvanti](https://img.youtube.com/vi/-9XthkEfoig/0.jpg)](https://www.youtube.com/watch?v=-9XthkEfoig "Madhuvanti")
 
-<pre>
 Raag Kalavati. Basant Bahar, CA
-</pre>
 [![Kalavati](https://img.youtube.com/vi/40-hDmWicvQ/0.jpg)](https://www.youtube.com/watch?v=40-hDmWicvQ "Kalavati")
 
 ## With students
