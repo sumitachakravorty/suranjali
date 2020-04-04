@@ -20,18 +20,35 @@ title: Home
 
 <div class="pagination">
   {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">Previous</a>
+    {% assign posts_list = paginator.next_page.posts %}
+    {% for post in posts_list %}
+      {% if post.title %}
+        {% assign label = post.title %}
+      {% else %}
+        {% assign label = "Previous" %}
+      {% endif %}
+      {% break %}
+    {% endfor %}
+      <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">{{ label }}</a>
   {% else %}
     <span class="pagination-item older">Previous</span>
   {% endif %}
   {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/">Next</a>
+    {% assign posts_list = paginator.previous_page.posts %}
+    {% for post in posts_list %}
+      {% if post.title %}
+        {% assign label = post.title %}
+      {% else %}
+        {% assign label = "Previous" %}
+      {% endif %}
+      {% break %}
+    {% endfor %}
+  {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ site.baseurl }}/">{{ label }}</a>
     {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Next</a>
+      <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">{{ label }}</a>
     {% endif %}
   {% else %}
     <span class="pagination-item newer">Next</span>
   {% endif %}
 </div>
-
