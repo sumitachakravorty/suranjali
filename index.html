@@ -21,25 +21,23 @@ title: Home
 <div class="pagination">
   {% if paginator.next_page %}
     {% assign label = "Next Post" %}
-    {% for post in paginator.next_page.posts %}
-      {% if post.title %}
-        {% assign label = post.title %}
-        {% break %}
-      {% endif %}
-    {% endfor %}
+    {% assign first = paginator.next_page | minus:1 | times:paginator.per_page %}
+    {% assign post = site.posts[first] %}
+    {% if post.title %}
+       {% assign label = post.title %}
+    {% endif %}
       <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">"{{ label }}"</a>
   {% else %}
     <span class="pagination-item older">Previous</span>
   {% endif %}
   {% if paginator.previous_page %}
-    {% assign label = "Previous Post" %}
-    {% for post in paginator.previous_page.posts %}
-      {% if post.title %}
-        {% assign label = post.title %}
-        {% break %}
-      {% endif %}
-    {% endfor %}
-  {% if paginator.page == 2 %}
+  {% assign label = "Previous Post" %}
+  {% assign first = paginator.previous_page | minus:1 | times:paginator.per_page %}
+  {% assign post = site.posts[first] %}
+  {% if post.title %}
+     {% assign label = post.title %}
+  {% endif %}
+{% if paginator.page == 2 %}
       <a class="pagination-item newer" href="{{ site.baseurl }}/">"{{ label }}"</a>
     {% else %}
       <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">"{{ label }}"</a>
