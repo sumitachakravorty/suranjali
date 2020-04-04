@@ -20,7 +20,7 @@ title: Home
 
 <div class="pagination">
   {% if paginator.next_page %}
-    {% assign label = "Previous" %}
+    {% assign label = "Next Post" %}
     {% for post in paginator.next_page.posts %}
       {% if post.title %}
         {% assign label = post.title %}
@@ -32,7 +32,7 @@ title: Home
     <span class="pagination-item older">Previous</span>
   {% endif %}
   {% if paginator.previous_page %}
-    {% assign label = "Next" %}
+    {% assign label = "Previous Post" %}
     {% for post in paginator.previous_page.posts %}
       {% if post.title %}
         {% assign label = post.title %}
