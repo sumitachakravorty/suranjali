@@ -27,7 +27,7 @@ title: Home
         {% break %}
       {% endif %}
     {% endfor %}
-      <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">{{ label }}</a>
+      <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">"{{ label }}"</a>
   {% else %}
     <span class="pagination-item older">Previous</span>
   {% endif %}
@@ -40,9 +40,9 @@ title: Home
       {% endif %}
     {% endfor %}
   {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/">{{ label }}</a>
+      <a class="pagination-item newer" href="{{ site.baseurl }}/">"{{ label }}"</a>
     {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">{{ label }}</a>
+      <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">"{{ label }}"</a>
     {% endif %}
   {% else %}
     <span class="pagination-item newer">Next</span>
