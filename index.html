@@ -3,21 +3,6 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
-  {% assign posts_list = paginator.posts %}
-  {% for post in posts_list %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ site.baseurl }}/{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
-
 <div class="pagination">
   {% if paginator.next_page %}
     {% assign label = "Next Post" %}
@@ -45,4 +30,19 @@ title: Home
   {% else %}
     <span class="pagination-item newer">Next</span>
   {% endif %}
+</div>
+
+<div class="posts">
+  {% assign posts_list = paginator.posts %}
+  {% for post in posts_list %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ site.baseurl }}/{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+
+    {{ post.content }}
+  </div>
+  {% endfor %}
 </div>
