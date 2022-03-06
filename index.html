@@ -16,13 +16,13 @@ title: Home
     <span class="pagination-item older">Previous</span>
   {% endif %}
   {% if paginator.previous_page %}
-  {% assign label = "Previous Post" %}
-  {% assign first = paginator.previous_page | minus:1 | times:paginator.per_page %}
-  {% assign post = site.posts[first] %}
-  {% if post.title %}
-     {% assign label = post.title %}
-  {% endif %}
-{% if paginator.page == 2 %}
+    {% assign label = "Previous Post" %}
+    {% assign first = paginator.previous_page | minus:1 | times:paginator.per_page %}
+    {% assign post = site.posts[first] %}
+    {% if post.title %}
+      {% assign label = post.title %}
+    {% endif %}
+    {% if paginator.page == 2 %}
       <a class="pagination-item newer" href="{{ site.baseurl }}/">"{{ label }}"</a>
     {% else %}
       <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">"{{ label }}"</a>
@@ -37,7 +37,11 @@ title: Home
   {% for post in posts_list %}
   <div class="post">
     <h1 class="post-title">
-      <a href="{{ site.baseurl }}/page{{ paginator.page }}">
+      {% if paginator.page == 1 %}
+        <a href="{{ site.baseurl }}">
+      {% else %}
+        <a href="{{ site.baseurl }}/page{{ paginator.page }}">
+      {% endif %}
         {{ post.title }}
       </a>
     </h1>
